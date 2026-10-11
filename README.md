@@ -1,4 +1,4 @@
-# Fashion-MNIST Classification using PyTorch
+# Fashion-MNIST Classification (Over-fitting)
 
 ## Overview
 This project focuses on classifying clothing images from the **Fashion-MNIST dataset** using an Artificial Neural Network (ANN) built with PyTorch. The model learns to identify different categories of clothing from grayscale images.
