@@ -79,7 +79,7 @@ The model's performance is evaluated using classification accuracy and loss.
 **Despite implementing regularization techniques such as Dropout, Batch Normalization, and L2 regularization, the model still shows signs of overfitting. The significant gap between training and test accuracy indicates that the model performs better on the training data than on unseen data. Further improvements could include hyperparameter tuning, early stopping, and experimenting with a Convolutional Neural Network (CNN) to improve generalization.**
 
 
-## Fashion-MNIST ANN Model Optimization Using Optuna
+# Fashion-MNIST ANN Model Optimization Using Optuna
 
 To improve the performance of the baseline ANN model, I implemented hyperparameter optimization using **Optuna** with PyTorch. The objective was to identify the best combination of hyperparameters to improve classification accuracy on the Fashion-MNIST dataset.
 
