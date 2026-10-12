@@ -1,4 +1,4 @@
-# Fashion-MNIST Classification (Over-fitting)
+# Fashion-MNIST Classification 
 
 ## Overview
 This project focuses on classifying clothing images from the **Fashion-MNIST dataset** using an Artificial Neural Network (ANN) built with PyTorch. The model learns to identify different categories of clothing from grayscale images.
@@ -78,4 +78,23 @@ The model's performance is evaluated using classification accuracy and loss.
 
 **Despite implementing regularization techniques such as Dropout, Batch Normalization, and L2 regularization, the model still shows signs of overfitting. The significant gap between training and test accuracy indicates that the model performs better on the training data than on unseen data. Further improvements could include hyperparameter tuning, early stopping, and experimenting with a Convolutional Neural Network (CNN) to improve generalization.**
 
+
+## Fashion-MNIST ANN Model Optimization Using Optuna
+
+To improve the performance of the baseline ANN model, I implemented hyperparameter optimization using **Optuna** with PyTorch. The objective was to identify the best combination of hyperparameters to improve classification accuracy on the Fashion-MNIST dataset.
+
+### Hyperparameter Tuning
+- **Number of Hidden Layers:** 1–5
+- **Neurons per Hidden Layer:** 8–128
+- **Number of Epochs:** 10–50
+- **Learning Rate:** \(10^{-5}\) to \(10^{-1}\)
+- **Dropout Rate:** 0.1–0.5
+- **Batch Size:** 16, 32, 64, 128
+- **Optimizer:** Adam, SGD, RMSprop
+- **Weight Decay:** \(10^{-5}\) to \(10^{-3}\)
+
+Optuna automatically evaluated different hyperparameter combinations and identified the configuration that achieved the best performance during optimization.
+
+### Results
+The optimized model achieved an accuracy of **90.2%**, demonstrating the importance of hyperparameter tuning in improving ANN performance.
 
